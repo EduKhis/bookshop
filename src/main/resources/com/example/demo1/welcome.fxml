@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #ffdd88;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.WelcomeController">
+   <children>
+      <Label layoutX="205.0" layoutY="22.0" prefHeight="38.0" prefWidth="291.0" text="Welcome to Book shop,">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="WelcomeLabel" layoutX="227.0" layoutY="60.0" prefHeight="17.0" prefWidth="246.0" textAlignment="CENTER">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <TableView fx:id="WelcomeTable" layoutX="122.0" layoutY="100.0" prefHeight="200.0" prefWidth="456.0">
+        <columns>
+          <TableColumn fx:id="WelcomeTableName" prefWidth="75.0" text="name" />
+            <TableColumn fx:id="WelcomeTableAuthor" prefWidth="85.0" text="author" />
+            <TableColumn fx:id="WelcomeTablePrice" prefWidth="65.0" text="price" />
+          <TableColumn fx:id="WelcomeTableGenre" prefWidth="75.0" text="genre" />
+            <TableColumn fx:id="WelcomeTableAvailable" prefWidth="75.0" text="available" />
+            <TableColumn fx:id="WelcomeTableId" minWidth="4.0" prefWidth="76.0" text="id" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
